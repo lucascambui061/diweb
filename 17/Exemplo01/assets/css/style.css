@@ -1,0 +1,64 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: #383838; 
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    display: flex; /* Adicionei para centralizar o main-content, se desejar */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Um fundo claro para a página */
+}
+
+/* Estilo do Contêiner Principal que divide Texto e Imagem */
+.main-content {
+    display: flex; /* ATIVA o Flexbox para colocar os itens lado a lado */
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    justify-content: space-between; /* Espalha o conteúdo para as laterais */
+    width: 90%; /* Largura do contêiner */
+    max-width: 1200px; /* Largura máxima */
+    background-color: white; /* Fundo branco para o container principal */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Estilo do Contêiner do Texto */
+.text-container {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    padding-right: 40px; /* Espaço entre o texto e a imagem */
+}
+
+/* Estilo do Contêiner da Imagem */
+.image-container {
+    flex: 1; /* Permite que a imagem ocupe o espaço disponível */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita dentro do seu container */
+}
+
+.image-container img {
+    max-width: 100%; /* Garante que a imagem não transborde */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados na imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar ou esticar muito */
+}
+
+
+/* Estilo do Título (h1) */
+.title {
+    font-size: 80px; 
+    color: #383838;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo do Subtítulo (p) */
+.subtitle {
+    font-size: 30px; 
+    color: #555;
+    line-height: 1.3; /* Espaçamento entre linhas */
+}

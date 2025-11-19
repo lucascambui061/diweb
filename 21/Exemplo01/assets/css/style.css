@@ -1,0 +1,24 @@
+.container {
+    border: 1px solid;
+    width: 100%;
+    height: 80vh; /* Use 'vh' (viewport height) para que o container ocupe 80% da altura da tela */
+}
+
+/* Este seletor 'div' aplica-se aos elementos div dentro do container, que são box-01, box-02 e box-03 */
+.container div { 
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.box-01 {
+    background-color: blueviolet;
+}
+
+.box-02 {
+    background-color: cornflowerblue;
+}
+
+.box-03 {
+    background-color: crimson;
+}

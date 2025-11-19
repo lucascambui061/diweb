@@ -1,0 +1,50 @@
+/* header.css */
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    padding: var(--space-md);
+    border-bottom: 5px solid var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+/* título */
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* nav base */
+nav {
+    background-color: var(--color-secondary);
+    min-height: 50px;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    align-self: start;
+}
+
+/* lista horizontal */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+/* hover simples */
+nav a:hover {
+    background: rgba(255,255,255,0.08);
+}

@@ -1,0 +1,64 @@
+/* main.css */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+/* article principal */
+article {
+    background-color: var(--color-article-bg);
+    min-height: 400px;
+    padding: var(--space-lg);
+    flex: 3 1 0%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    border-radius: var(--radius-sm);
+}
+
+article h2 {
+    margin-bottom: var(--space-md);
+    color: var(--color-primary);
+}
+
+/* sections dentro do article */
+article section {
+    background-color: var(--color-section-bg);
+    min-height: 100px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px dashed #16a085;
+    border-radius: var(--radius-sm);
+}
+
+/* aside lateral */
+aside {
+    background-color: var(--color-aside-bg);
+    min-height: 400px;
+    padding: 20px;
+    border-left: 5px solid var(--color-highlight);
+    flex: 1 0 250px;
+    border-radius: var(--radius-sm);
+}
+
+/* responsividade simples */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        padding: var(--space-md);
+    }
+
+    aside {
+        order: 2;
+        width: 100%;
+    }
+
+    article {
+        order: 1;
+        width: 100%;
+    }
+}

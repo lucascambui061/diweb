@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Área do Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Goiás Vaquejada Turismo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pacotes.html">Pacotes de Viagem</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="new.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Acesso ao Painel do Peão</h2>
+            
+            <form action="/painel-cliente" method="post" class="auth-form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit" class="cta-button">Entrar</button>
+            </form>
+            
+            <p class="link-cadastro">Ainda não tem conta? <a href="new.html">Cadastre-se Agora!</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Goiás Vaquejada Turismo. | Desenvolvido para TI-MII-DESENV-WEB.</p>
+    </footer>
+</body>
+</html>
